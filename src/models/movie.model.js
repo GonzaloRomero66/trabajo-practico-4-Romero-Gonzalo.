@@ -3,7 +3,7 @@ import { sequelize } from "../config/database.js";
 import { type } from "node:os";
 import { timeStamp } from "node:console";
 
-export const movies = sequelize.define (
+export const Movie = sequelize.define (
     'Movie',
     {
         title:{
@@ -29,5 +29,7 @@ export const movies = sequelize.define (
     },
     {
         timestams:false,
+        createdAt: false,
+        updatedAt: false
     },
 );

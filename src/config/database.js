@@ -14,4 +14,4 @@ export const startDB = async () => {
     } catch (error) {
         console.error('No se pudo conectar a la db',error);
     }
-}
+};
